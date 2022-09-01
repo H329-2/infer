@@ -1,0 +1,5 @@
+<launch>
+    <node name='infr' pkg='infer' type='tensorrt_inference_3class_bev.py' output='screen'/>
+    <node name='bagpl' pkg='rosbag' type='play' args='/home/lumos/pioneer_bag/2022-08-10-10-40-47.bag'/>
+    <node name='rviz' pkg='rviz' type='rviz' required='true'/>
+</launch>
